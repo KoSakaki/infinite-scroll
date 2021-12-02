@@ -3,7 +3,7 @@ $(function() {
   add(0);
 
   $(window).on("scroll", function() {
-    console.log($(window).scrollTop(), $(window).height(), $("html").height());
+    // console.log($(window).scrollTop(), $(window).height(), $("html").height());
 
     if($("html").height() <= $(window).scrollTop() + $(window).height()) {
       // 最後のインデックスを取得
@@ -21,7 +21,7 @@ function add(firstIndex) {
   const flagment = document.createDocumentFragment();
   for(let idx = 0; idx < 10; idx++) {
     const clone = document.importNode(content, true);
-    $(clone.firstElementChid).find("p").text((idx + firstIndex) + "");
+    $(clone.firstElementChild).find("p").text((idx + firstIndex) + "");
     flagment.appendChild(clone);
   }
   $(".AddArea").append(flagment);
