@@ -4,8 +4,8 @@ $(function() {
 
   $(window).on("scroll", function() {
     // console.log($(window).scrollTop(), $(window).height(), $("html").height());
-
-    if($("html").height() <= $(window).scrollTop() + $(window).height()) {
+    const height = $("html").height();
+    if(height <= $(window).scrollTop() + $(window).height()) {
       // 最後のインデックスを取得
       const obj = $(".added").last();
       const lastIndex = Number(obj.find("p").text());
