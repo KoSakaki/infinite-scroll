@@ -1,0 +1,12 @@
+.added{
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  padding: 0;
+  margin: 0;
+}
+
+.AddArea{
+  padding: 10;
+  margin: 10;
+}
